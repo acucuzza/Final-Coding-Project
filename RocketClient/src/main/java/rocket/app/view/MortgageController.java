@@ -58,7 +58,7 @@ public class MortgageController {
 	@FXML
 	private void initialize() {
 		ObservableList<String> options = FXCollections.observableArrayList("15 Years", "30 Years");
-		final ComboBox cmbTerm = new ComboBox(options);
+		cmbTerm = new ComboBox(options);
 	}
 	
 	
