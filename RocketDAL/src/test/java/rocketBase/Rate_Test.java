@@ -26,4 +26,8 @@ public class Rate_Test {
 		assert(rates.size() > 0);
 		
 	}
+	//@Test public void ExceptionTest() throws Exception {
+		//ArrayList <RateDomainModel> rates = new ArrayList <RateDomainModel> (RateDAL.getAllRates());
+		//assertTrue(!(rates.contains()));
+	//}
 }
