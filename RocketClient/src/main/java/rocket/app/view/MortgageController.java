@@ -3,6 +3,8 @@ package rocket.app.view;
 
 
 import eNums.eAction;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -41,6 +43,12 @@ public class MortgageController {
 
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
+	}
+	
+	@FXML
+	private void initialize() {
+		ObservableList<String> options = FXCollections.observableArrayList("15 Years", "30 Years");
+		final ComboBox cmbTerm = new ComboBox(options);
 	}
 	
 	
@@ -82,6 +90,10 @@ public class MortgageController {
 		//			after it's returned back from the server, the payment (dPayment)
 		//			should be calculated.
 		//			Display dPayment on the form, rounded to two decimal places
+		double payment = lRequest.getdPayment();
+		if (payment<= 0.36*(lRequest.getIncome()/12) && payment <= 0.28*(lRequest.getIncome()/12 - lRequest.getExpenses())) {
+			System.out.format("%.2f", payment);
+		}
 		
 	}
 }

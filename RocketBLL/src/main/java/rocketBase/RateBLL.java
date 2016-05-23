@@ -30,7 +30,7 @@ public class RateBLL {
 				continue;
 			}
 			else {
-				throw new RateException(rate);
+				throw new RateException();
 			}
 		}
 		
@@ -49,6 +49,6 @@ public class RateBLL {
 	
 	public static double getPayment(double r, double n, double p, double f, boolean t)
 	{		
-		return FinanceLib.pmt(r, n, p, f, t);
+		return Math.abs(FinanceLib.pmt(r, n, p, f, t));
 	}
 }

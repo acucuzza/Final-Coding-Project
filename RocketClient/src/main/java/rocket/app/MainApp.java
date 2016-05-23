@@ -70,6 +70,7 @@ public class MainApp extends Application {
 		this.primaryStage.setScene(scene);
 		this.primaryStage.show();
 		
+		
 		showRocketMenu();
 		
 	}
