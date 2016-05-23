@@ -27,15 +27,25 @@ public class MortgageController {
 	//		Labels   -  various labels for the controls
 	//		Button   -  button to calculate the loan payment
 	//		Label    -  to show error messages (exception throw, payment exception)
+	@FXML
 	private TextField txtIncome;
+	@FXML
 	private TextField txtExpenses;
+	@FXML
 	private TextField txtCreditScore;
+	@FXML
 	private TextField txtHouseCost;
+	@FXML
 	private ComboBox cmbTerm;
+	@FXML
 	private Label Income;
+	@FXML
 	private Label Expenses;
+	@FXML
 	private Label CreditScore;
+	@FXML
 	private Label HouseCost;
+	@FXML
 	private Label lblMortgagePayment;
 	
 	

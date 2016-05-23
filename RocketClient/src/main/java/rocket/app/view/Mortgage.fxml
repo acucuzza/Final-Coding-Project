@@ -5,21 +5,20 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocket.app.view.MortgageController">
    <children>
       <AnchorPane prefHeight="412.0" prefWidth="448.0">
          <children>
-            <Label layoutX="41.0" layoutY="30.0" prefHeight="26.0" prefWidth="87.0" text="Credit Score" />
-            <Label layoutX="41.0" layoutY="76.0" prefHeight="26.0" prefWidth="87.0" text="Income" />
-            <Label layoutX="41.0" layoutY="127.0" prefHeight="26.0" prefWidth="87.0" text="House Cost" />
-            <Label layoutX="41.0" layoutY="180.0" prefHeight="26.0" prefWidth="87.0" text="Expenses" />
-            <TextField layoutX="256.0" layoutY="30.0" />
-            <TextField layoutX="256.0" layoutY="76.0" />
-            <TextField layoutX="256.0" layoutY="127.0" />
-            <TextField layoutX="256.0" layoutY="180.0" />
-            <Label layoutX="41.0" layoutY="233.0" prefHeight="26.0" prefWidth="87.0" text="Term" />
-            <ComboBox layoutX="256.0" layoutY="233.0" prefWidth="150.0" />
+            <Label fx:id="CreditScore" layoutX="41.0" layoutY="30.0" prefHeight="26.0" prefWidth="87.0" text="Credit Score" />
+            <Label fx:id="Income" layoutX="41.0" layoutY="76.0" prefHeight="26.0" prefWidth="87.0" text="Income" />
+            <Label fx:id="HouseCost" layoutX="41.0" layoutY="127.0" prefHeight="26.0" prefWidth="87.0" text="House Cost" />
+            <Label fx:id="Expenses" layoutX="41.0" layoutY="180.0" prefHeight="26.0" prefWidth="87.0" text="Expenses" />
+            <TextField fx:id="txtCreditScore" layoutX="256.0" layoutY="30.0" />
+            <TextField fx:id="txtIncome" layoutX="256.0" layoutY="76.0" />
+            <TextField fx:id="txtHouseCost" layoutX="256.0" layoutY="127.0" />
+            <TextField fx:id="txtExpenses" layoutX="256.0" layoutY="180.0" />
+            <Label fx:id="lblMortgagePayment" layoutX="41.0" layoutY="233.0" prefHeight="26.0" prefWidth="87.0" text="Term" />
+            <ComboBox fx:id="cmbTerm" layoutX="256.0" layoutY="233.0" prefWidth="150.0" />
          </children>
       </AnchorPane>
    </children>
