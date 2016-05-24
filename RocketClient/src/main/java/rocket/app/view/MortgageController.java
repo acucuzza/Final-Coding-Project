@@ -47,6 +47,10 @@ public class MortgageController {
 	private Label HouseCost;
 	@FXML
 	private Label lblMortgagePayment;
+	@FXML
+	private Label Term;
+	@FXML
+	private Button calculate;
 	
 	
 	
